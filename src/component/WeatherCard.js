@@ -33,18 +33,18 @@ const WeatherCard = (data) => {
                         </Col>
                     </Row>
                     <Row style={{ backgroundColor: 'grey', textAlign: 'center' }}>
-                        <Col lg={7} style={{fontSize:'12px'}}>
+                        <Col lg={6} xs={6} style={{fontSize:'12px'}}>
                             <p style={{fontWeight:'bold'}}>Pressure: 1018hPa</p>
                             <p style={{fontWeight:'bold'}}>Humidity: 70%</p>
                             <p style={{fontWeight:'bold'}}>Visibility: 8.0km</p>
                         </Col>
                         <Col lg={1} className='vl'></Col>
-                        <Col lg={7} style={{fontSize:'12px'}}>
+                        <Col lg={6} xs={6} style={{fontSize:'12px'}}>
                             <p style={{fontWeight:'bold'}}><ArrowRightOutlined /></p>
                             <p style={{fontWeight:'bold'}}>4.0m/s 120 Degree</p>
                         </Col>
                         <Col lg={1} className='vl'></Col>
-                        <Col lg={7} style={{fontSize:'12px'}}>
+                        <Col lg={6} xs={6} style={{fontSize:'12px'}}>
                             <p style={{fontWeight:'bold'}}>Sunrise: 6.05 am</p>
                             <p style={{fontWeight:'bold'}}>Sunset: 6.05pm</p>
                         </Col>

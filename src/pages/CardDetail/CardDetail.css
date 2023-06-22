@@ -1,0 +1,19 @@
+.vl {
+    border-left: 1px solid rgb(44, 42, 42);
+    height: 140px;
+    margin-left: 25px;
+  }
+
+  @media screen and (max-width: 576px) {
+    .ful-card{
+        padding: 0px !important;
+    }
+    .few-clouds{
+        margin-top: 0px !important;
+    }
+    .icon-few{
+        padding-left: 20px !important;
+    }
+      
+        
+  }

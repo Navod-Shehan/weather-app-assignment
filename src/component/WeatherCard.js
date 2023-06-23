@@ -9,6 +9,7 @@ const WeatherCard = (data) => {
     console.log(city);
 
     return (
+        // Card component
         <Row >
             <Col style={{width:'100%'}}>
             <Link to={{ pathname: `/cardDetails/${city.id}`, state: city }}>

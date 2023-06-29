@@ -1,19 +1,95 @@
-.vl {
-    border-left: 1px solid rgb(44, 42, 42);
-    height: 140px;
-    margin-left: 25px;
-  }
+.container{
+    height: 100vh;
+    background-image: url('../../assets/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
 
-  @media screen and (max-width: 576px) {
-    .ful-card{
-        padding: 0px !important;
+.ful-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ful-card-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.row-head{
+    background-color: rgb(77, 129, 226);
+    width: 100%;
+    padding: 30px;
+}
+
+.ful-card-main{
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.city-name1 span{
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+}
+
+.time-date1 span{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.cloud-icon{
+    font-size: 100px;
+    color: white;
+}
+
+.footer-content span{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* @media screen and (max-width: 576px) {
+
+} */
+
+@media (max-width: 767px) {
+    .container {
+      background-size: cover;
     }
-    .few-clouds{
-        margin-top: 0px !important;
+    
+    .ful-card {
+      flex-direction: column;
     }
-    .icon-few{
-        padding-left: 20px !important;
+    
+    .ful-card-1 {
+      padding: 20px;
     }
-      
-        
+    
+    .ful-card-main {
+      width: 90%;
+    }
+    
+    .city-name1 span {
+      font-size: 30px;
+    }
+    
+    .time-date1 span {
+      font-size: 14px;
+    }
+    
+    .cloud-icon {
+      font-size: 70px;
+    }
+    
+    .footer-content span {
+      font-size: 12px;
+    }
   }

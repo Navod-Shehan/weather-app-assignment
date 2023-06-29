@@ -1,12 +1,37 @@
+.home-container{
+    background-image: url('../../assets/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
 .header{
-    padding-top: 20px;
+    padding: 20px;
     width: 100vw;
     text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
 }
 
 .search-bar{
     width: 100vw;
     text-align: center;
+}
+
+.search-bar input{
+    background-color: black;
+    border: none;
+}
+
+.search-bar button{
+    background-color: rgb(153, 60, 216);
+    color: white;
+}
+
+.search-bar input::placeholder {
+  color: grey; /* Replace with your desired color */
 }
 
 .weather-cards{
@@ -25,10 +50,21 @@
     padding: 0px !important;
 }
 
+.all-card{
+    padding-left: 200px;
+    padding-top: 30px;
+}
 
-@media screen and (max-width: 576px) {
+
+/* @media screen and (max-width: 576px) {
     .all-card{
         padding-left: 0px !important;
     }
         
-}
+} */
+@media (max-width: 767px) {
+    .all-card {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }

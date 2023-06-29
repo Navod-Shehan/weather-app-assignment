@@ -4,56 +4,102 @@ import React from 'react';
 import './WeatherCard.css';
 import { Link } from 'react-router-dom';
 
+
 const WeatherCard = (data) => {
-    const city=data.data
+    const city = data.data
     console.log(city);
 
     return (
         // Card component
         <Row >
-            <Col style={{width:'100%'}}>
-            <Link to={{ pathname: `/cardDetails/${city.id}`, state: city }}>
-                
-                <Card
-                    style={{
-                        width: '100%',
-                        margin: '30px',
-                    }}
-                >
-                    <Row >
-                        <Col span={12} style={{ textAlign: 'center' }}>
-                            <p style={{fontSize:'30px', fontWeight:'bolder'}}>{city.name}</p>
-                            <p style={{fontWeight:'bold'}}>9.19am, Feb 8</p>
-                            <p style={{fontWeight:'bold'}}><CloudOutlined style={{ paddingRight: '10px' }} />{city.weather.description}</p>
-                        </Col>
-                        <Col span={12} style={{ textAlign: 'center' }}>
-                            <p style={{fontSize:'30px', fontWeight:'bolder'}}>{city.main.temp} &deg;C</p>
-                            <p style={{fontWeight:'bold'}}>{city.main.temp}&deg;C</p>
-                            <p style={{fontWeight:'bold'}}>Temp Max: 28&deg;C</p>
+            <Col className='card-container'>
+                <Link to={{ pathname: `/cardDetails/${city.id}`, state: city }}>
 
-                        </Col>
-                    </Row>
-                    <Row style={{ backgroundColor: 'grey', textAlign: 'center' }}>
-                        <Col lg={6} xs={6} style={{fontSize:'12px'}}>
-                            <p style={{fontWeight:'bold'}}>Pressure: 1018hPa</p>
-                            <p style={{fontWeight:'bold'}}>Humidity: 70%</p>
-                            <p style={{fontWeight:'bold'}}>Visibility: 8.0km</p>
-                        </Col>
-                        <Col lg={1} className='vl'></Col>
-                        <Col lg={6} xs={6} style={{fontSize:'12px'}}>
-                            <p style={{fontWeight:'bold'}}><ArrowRightOutlined /></p>
-                            <p style={{fontWeight:'bold'}}>4.0m/s 120 Degree</p>
-                        </Col>
-                        <Col lg={1} className='vl'></Col>
-                        <Col lg={6} xs={6} style={{fontSize:'12px'}}>
-                            <p style={{fontWeight:'bold'}}>Sunrise: 6.05 am</p>
-                            <p style={{fontWeight:'bold'}}>Sunset: 6.05pm</p>
-                        </Col>
-                    </Row>
-                    <Row>
+                    <Card className='card-main'>
+                        <Row className='main-row'>
+                            <Col lg={12} className='card-sub'>
+                                <Row>
+                                    <Col span={24} className='city-name'>
+                                        <span>{city.name}</span>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col span={24} className='time-date'>
+                                        <span>9.19am, Feb 8</span>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col span={24} className='weather-description'>
+                                        <span><CloudOutlined />{city.weather.description}</span>
+                                    </Col>
+                                </Row>
+                            </Col>
 
-                    </Row>
-                </Card>
+                            <Col lg={12} className='card-sub'>
+                                <Row>
+                                    <Col span={24} className='city-name'>
+                                        <span>{city.main.temp} &deg;C</span>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col span={24} className='time-date'>
+                                        <span>Temp Min: {city.main.temp_min} &deg;C</span>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col span={24} className='weather-description'>
+                                        <span>Temp Max: {city.main.temp_max} &deg;C</span>
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
+
+
+                        <Row className='footer-content'>
+                            <Col lg={8} xs={8}>
+                                <Row>
+                                    <Col span={24}>
+                                        <span>Pressure: {city.main.pressure}Pa</span>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col span={24}>
+                                        <span>Humidity: {city.main.humidity}%</span>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col span={24}>
+                                        <span>Visibility: {city.visibility}km</span>
+                                    </Col>
+                                </Row>
+                            </Col>
+
+                            <Col lg={8} xs={8}>
+                                <Row>
+                                    <Col span={24}>
+                                        <ArrowRightOutlined />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col span={24}>
+                                        <span>{city.wind.speed}m/s {city.wind.deg} Degree</span>
+                                    </Col>
+                                </Row>
+                            </Col>
+                            <Col lg={8} xs={8}>
+                                <Row>
+                                    <Col span={24}>
+                                        <span>Sunrise: 6.05 am</span>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col span={24}>
+                                        <span>Sunset: 6.05pm</span>
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
+                    </Card>
                 </Link>
             </Col>
         </Row>

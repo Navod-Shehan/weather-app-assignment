@@ -1,8 +1,8 @@
 import { ArrowLeftOutlined, ArrowRightOutlined, CloudOutlined } from '@ant-design/icons';
-import { Card, Col, Row } from 'antd';
+import { Button, Card, Col, Row } from 'antd';
 import React, { useEffect, useState } from 'react';
 import './CardDetail.css';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { getCachedData } from '../../utils/CacheUtil';
 
 
@@ -22,7 +22,15 @@ const CardDetail = () => {
                 <Card className='ful-card-main'>
                     <Row className='row-head'>
                         <Col span={24}>
-                            <Row><ArrowLeftOutlined /></Row>
+                            <Row>
+                                <Link to='/'>
+                                    <Button>
+                                    <ArrowLeftOutlined />
+                                    </Button>
+                               
+                                </Link>
+                                
+                            </Row>
                             <Row className='city-name1'>
                                 <Col span={24}>
                                     <span>{weatherData?.name}</span>

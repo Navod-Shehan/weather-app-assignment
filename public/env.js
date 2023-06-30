@@ -5,7 +5,7 @@ window.env = {
   "asl.log": "Destination=file",
   "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
   "ChocolateyLastPathUpdate": "133167173897229022",
-  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\LOCAL\\crashpad_4736_OUVDAOFZISSXABBB",
+  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\LOCAL\\crashpad_13656_EKFTCLVDPMPGIXHJ",
   "COLOR": "1",
   "COLORTERM": "truecolor",
   "CommonProgramFiles": "C:\\Program Files\\Common Files",
@@ -15,6 +15,8 @@ window.env = {
   "ComSpec": "C:\\Windows\\system32\\cmd.exe",
   "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
   "EDITOR": "notepad.exe",
+  "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+  "FPS_BROWSER_USER_PROFILE_STRING": "Default",
   "GIT_ASKPASS": "c:\\Users\\Navod\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
   "HOME": "C:\\Users\\Navod",
   "HOMEDRIVE": "C:",
@@ -66,7 +68,6 @@ window.env = {
   "PROMPT": "$P$G",
   "PSModulePath": "C:\\Users\\Navod\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
   "PUBLIC": "C:\\Users\\Public",
-  "REACT_APP_API_KEY": "your_api_key",
   "SESSIONNAME": "Console",
   "SystemDrive": "C:",
   "SystemRoot": "C:\\Windows",
@@ -84,6 +85,6 @@ window.env = {
   "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\Navod\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
   "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-0bd08bb667-sock",
   "VSCODE_INJECTION": "1",
-  "VSCODE_NONCE": "ef991ebf-92c2-40b8-aeb3-9f8d3cef70c6",
+  "VSCODE_NONCE": "528e130b-2fa3-4bfb-92f9-36214f02797f",
   "windir": "C:\\Windows"
 };
